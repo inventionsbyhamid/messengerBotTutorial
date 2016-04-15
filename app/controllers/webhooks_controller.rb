@@ -6,7 +6,9 @@ class WebhooksController < ApplicationController
   	 url = "https://graph.facebook.com/v2.6/me/messages?access_token=#{ENV['PAGE_TOKEN']}"
 
   	if request.get?
-  		if params['hub.verify_token'] == "cMfuqRvoMTLjM47A"
+      puts "#{ENV['VERIFY_TOKEN']}"
+      t = "#{ENV['VERIFY_TOKEN']}"
+  		if params['hub.verify_token'] == t
   			render plain: params['hub.challenge']
   		else
   			render plain: 'Error, wrong validation token'
