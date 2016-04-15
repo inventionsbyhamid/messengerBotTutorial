@@ -7,6 +7,10 @@
     "PAGE_TOKEN": {
       "description": "Your Facebook page access token",
       "required": "true"
+    },
+    "VERIFY_TOKEN": {
+      "description": "Some random string combination.",
+      "required": "true"
     }
   },
   "image": "heroku/ruby"
