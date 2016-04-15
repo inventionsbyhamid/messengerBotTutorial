@@ -1,27 +1,13 @@
 {
-  "name": "ShareMeow",
-  "description": "a Ruby microservice (ooh ahh) for creating super shareable, tweetable, facebook-able images from your content :heart_eyes_cat:.",
-  "logo": "https://raw.githubusercontent.com/producthunt/ShareMeow/master/public/images/emoji/unicode/1f63b.png",
-  "repository": "https://github.com/producthunt/ShareMeow",
-  "keywords": ["ruby", "sinatra", "images", "twitter", "product hunt"],
+  "name": "messengerBotTutorial",
+  "description": "Facebook Messenger bot",
+  "repository": "https://github.com/inventionsbyhamid/messengerBotTutorial",
+  "keywords": ["ruby", "facebook", "messenger bot"],
   "env": {
-    "SHARE_MEOW_SECRET_KEY": {
-      "description": "A secret key used for authentication.",
+    "PAGE_TOKEN": {
+      "description": "Your Facebook page access token",
       "generator": "secret",
       "required": "true"
-    },
-    "BASE_URL": {
-      "description": "The URL to your deployed ShareMeow App",
-      "value": "https://app-name.herokuapp.com",
-      "required": "true"
-    },
-    "WEB_CONCURRENCY": {
-      "description": "The number of Puma processes to run.",
-      "value": "2"
-    },
-    "MAX_THREADS": {
-      "description": "The number of Puma threads to run per process.",
-      "value": "5"
     }
   },
   "image": "heroku/ruby"
