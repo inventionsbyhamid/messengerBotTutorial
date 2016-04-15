@@ -34,7 +34,9 @@ class WebhooksController < ApplicationController
         			elsif text.casecmp("/timings").zero?
         				reply(sender , "9:15 AM to 5:00 PM",url)
         			elsif text.casecmp("/help").zero?
-        				reply(sender , "Welcome to My College Bot\nI respond to the following commands\n/address To get the college address\n/contact To get college contact details\n/timings To get regular college hours\n/help To get these instructions again",url)	
+        				reply(sender , "Welcome to My College Bot\nI respond to the following commands\n/address To get the college address\n/contact To get college contact details\n/timings To get regular college hours\n/help To get these instructions again",url)
+              else
+                reply(sender , "Invalid command", url)	
         			end
 
       			end
