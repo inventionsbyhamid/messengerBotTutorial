@@ -1,0 +1,28 @@
+{
+  "name": "ShareMeow",
+  "description": "a Ruby microservice (ooh ahh) for creating super shareable, tweetable, facebook-able images from your content :heart_eyes_cat:.",
+  "logo": "https://raw.githubusercontent.com/producthunt/ShareMeow/master/public/images/emoji/unicode/1f63b.png",
+  "repository": "https://github.com/producthunt/ShareMeow",
+  "keywords": ["ruby", "sinatra", "images", "twitter", "product hunt"],
+  "env": {
+    "SHARE_MEOW_SECRET_KEY": {
+      "description": "A secret key used for authentication.",
+      "generator": "secret",
+      "required": "true"
+    },
+    "BASE_URL": {
+      "description": "The URL to your deployed ShareMeow App",
+      "value": "https://app-name.herokuapp.com",
+      "required": "true"
+    },
+    "WEB_CONCURRENCY": {
+      "description": "The number of Puma processes to run.",
+      "value": "2"
+    },
+    "MAX_THREADS": {
+      "description": "The number of Puma threads to run per process.",
+      "value": "5"
+    }
+  },
+  "image": "heroku/ruby"
+}
