@@ -6,7 +6,6 @@
   "env": {
     "PAGE_TOKEN": {
       "description": "Your Facebook page access token",
-      "generator": "secret",
       "required": "true"
     }
   },
